@@ -25,7 +25,7 @@ app.get('/getUsers', async (req, res) => {
         }
 })
 
-//simple create
+/* simple create */
 app.post('/createUser', async(req, res) => {
     try {
         const user = req.body
@@ -40,7 +40,7 @@ app.post('/createUser', async(req, res) => {
     }
 })
 
-//sample update 
+/* simple update */
 app.put('/updateUser/:id', async (req, res) => {
     try {
         const { id } = req.params
@@ -56,7 +56,7 @@ app.put('/updateUser/:id', async (req, res) => {
     }
 })
 
-//simple delete user
+/* simple delete */
 app.post('/deleteUser/:id', async (req, res) => {
     try {
         const { id } = req.params
